@@ -1,19 +1,22 @@
 {
-  "name": "Ecommerce-Website-in-React",
+  "name": "ecommerce-website-in-react",
   "version": "0.0.1",
   "private": true,
   "description": "",
-  "homepage": "https://github.com/WildCodeSchool/Ecommerce-Website-in-React#readme",
+  "homepage": "https://github.com/Ange230700/Ecommerce-Website-in-React#",
   "bugs": {
-    "url": "https://github.com/WildCodeSchool/Ecommerce-Website-in-React/issues"
+    "url": "https://github.com/Ange230700/Ecommerce-Website-in-React/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WildCodeSchool/Ecommerce-Website-in-React.git"
+    "url": "git+https://github.com/Ange230700/Ecommerce-Website-in-React.git"
   },
-  "workspaces": ["client", "server"],
+  "workspaces": [
+    "client",
+    "server"
+  ],
   "scripts": {
-    "postinstall": "husky install || true",
+    "postinstall": "cross-env-shell \"husky install && npm install --workspace=client && npm install --workspace=server\"",
     "db:migrate": "npm run db:migrate --workspace=server",
     "db:seed": "npm run db:seed --workspace=server",
     "dev": "concurrently -c green,yellow -t \"HH:mm:ss\" -p \"{name} {time}\" \"npm:dev:*\"",
@@ -21,7 +24,11 @@
     "dev:server": "npm run dev --workspace=server",
     "lint": "lint-staged",
     "test": "npm run test --workspaces --if-present",
-    "clean": "cross-env-shell \"rm -rf ./client/node_modules ./server/node_modules ./node_modules ./package-lock.json\""
+    "clean": "cross-env-shell \"rm -rf ./client/node_modules ./client/package-lock.json ./server/node_modules ./server/package-lock.json ./node_modules ./package-lock.json\"",
+    "prettier": "npm run prettier --workspaces",
+    "lints": "npm run lint --workspaces",
+    "start": "npm install && npm audit fix && npm run prettier && npm run lint && cd ./server && npm run db:migrate && npm run db:seed && cd .. && npm run dev",
+    "commit": "npm run prettier && npm run lints && git add . && git commit -m \"working...\" && cd .. && git push origin master"
   },
   "keywords": [],
   "author": "WildCodeSchool",
