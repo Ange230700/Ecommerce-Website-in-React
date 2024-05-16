@@ -1,5 +1,5 @@
-import Categories from "../components/Categories";
-import SliderHome from "../components/SliderHome";
+import Categories from "./Categories";
+import SliderHome from "./SliderHome";
 
 function Home() {
   return (

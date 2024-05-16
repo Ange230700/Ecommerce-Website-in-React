@@ -3,9 +3,12 @@ import ReactDOM from "react-dom/client";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import { MainProvider } from "./contexts/MainContext";
+
 import App from "./App";
 
-import Home from "./pages/Home";
+import Pages from "./pages/Pages";
+import Cart from "./pages/Cart";
 
 import "./sass/index.scss";
 
@@ -16,7 +19,11 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
+        element: <Pages />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
     ],
   },
@@ -26,6 +33,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <MainProvider>
+      <RouterProvider router={router} />
+    </MainProvider>
   </React.StrictMode>
 );

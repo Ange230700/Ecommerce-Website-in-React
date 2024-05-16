@@ -1,5 +1,13 @@
+import SlideCard from "./SlideCard";
+
 function SliderHome() {
-  return <div>SliderHome</div>;
+  return (
+    <section className="homeSlide contentWidth">
+      <div className="container">
+        <SlideCard />
+      </div>
+    </section>
+  );
 }
 
 export default SliderHome;
