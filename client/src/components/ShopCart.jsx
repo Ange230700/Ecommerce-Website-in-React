@@ -17,10 +17,7 @@ function ShopCart() {
             <div className="product mtop">
               <div className="img">
                 <span className="discount">{shopItem.discount}% Off</span>
-                <img
-                  src={`${import.meta.env.VITE_APP_URL}/${shopItem.cover}`}
-                  alt="shop cart pic"
-                />
+                <img src={`/assets/${shopItem.cover}`} alt="shop cart pic" />
                 <div className="product-like">
                   <label>{count}</label> <br />
                   <i

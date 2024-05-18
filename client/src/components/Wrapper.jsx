@@ -7,10 +7,7 @@ function Wrapper() {
         {data.map((val) => (
           <div className="product" key={val.id}>
             <div className="img icon-circle">
-              <img
-                src={`${import.meta.env.VITE_APP_URL}/${val.cover}`}
-                alt="product pic"
-              />
+              <img src={`/assets/${val.cover}`} alt="product pic" />
             </div>
             <h3>{val.title}</h3>
             <p>{val.decs}</p>

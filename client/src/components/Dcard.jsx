@@ -21,7 +21,7 @@ function Dcard() {
         <div className="box product" key={value.id}>
           <div className="img">
             <img
-              src={`${import.meta.env.VITE_APP_URL}/${value.cover}`}
+              src={`/assets/${value.cover}`}
               alt="discount pic"
               width="100%"
             />

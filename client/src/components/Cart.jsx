@@ -7,7 +7,8 @@ function Cart() {
         <div className="box" key={val.id}>
           <div className="img">
             <img
-              src={`${import.meta.env.VITE_APP_URL}/${val.cover} `}
+              // src={`${import.meta.env.VITE_API_URL}/${val.cover} `}
+              src={`/assets/${val.cover} `}
               alt="Cart pic"
             />
           </div>

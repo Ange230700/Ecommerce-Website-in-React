@@ -6,7 +6,8 @@ function Categories() {
       {data.map((value) => (
         <div className="box f_flex" key={value.id}>
           <img
-            src={`${import.meta.env.VITE_APP_URL}/${value.cateImg}`}
+            // src={`${import.meta.env.VITE_API_URL}/${value.cateImg}`}
+            src={`/assets/${value.cateImg}`}
             alt="category pic"
           />
           <span>{value.cateName}</span>

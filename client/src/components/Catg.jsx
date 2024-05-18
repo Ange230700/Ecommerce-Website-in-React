@@ -9,10 +9,7 @@ function Catg() {
       </div>
       {data.map((value) => (
         <div className="box f_flex" key={value.id}>
-          <img
-            src={`${import.meta.env.VITE_APP_URL}/${value.cateImg}`}
-            alt=""
-          />
+          <img src={`/assets/${value.cateImg}`} alt="" />
           <span>{value.cateName}</span>
         </div>
       ))}

@@ -9,10 +9,10 @@ function Navbar() {
     <header className="header">
       <div className="container d_flex">
         <div className="catgrories d_flex">
-          <span className="fa-solid fa-border-all" />
-          <h4>
-            Categories <i className="fa fa-chevron-down" />
-          </h4>
+          {/* <span className="fa-solid fa-border-all" /> */}
+          <img src="/assets/icons/category.svg" alt="category" />
+          <h4>Categories {/* <i className="fa fa-chevron-down" /> */}</h4>
+          <img src="/assets/icons/chevron.svg" alt="chevron" />
         </div>
 
         <div className="navlink">
@@ -22,7 +22,7 @@ function Navbar() {
             }
           >
             {/* <ul className='link f_flex uppercase {MobileMenu ? "nav-links-MobileMenu" : "nav-links"} onClick={() => setMobileMenu(false)}'> */}
-            {[
+            {/* {[
               "home",
               "pages",
               "user account",
@@ -38,25 +38,25 @@ function Navbar() {
                   </Link>
                 </li>
               );
-            })}
-            {/* <li>
+            })} */}
+            <li>
+              <Link to="/">pages</Link>
+            </li>
+            <li>
               <Link to="/">home</Link>
             </li>
             <li>
-              <Link to="/pages">pages</Link>
+              <Link to="/">user account</Link>
             </li>
             <li>
-              <Link to="/user">user account</Link>
+              <Link to="/">vendor account</Link>
             </li>
             <li>
-              <Link to="/vendor">vendor account</Link>
+              <Link to="/">track my order</Link>
             </li>
             <li>
-              <Link to="/track">track my order</Link>
+              <Link to="/">contact</Link>
             </li>
-            <li>
-              <Link to="/contact">contact</Link>
-            </li> */}
           </ul>
 
           <button

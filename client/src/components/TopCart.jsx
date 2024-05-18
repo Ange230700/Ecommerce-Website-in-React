@@ -25,7 +25,7 @@ function TopCart() {
           </div>
           <div className="img">
             <img
-              src={`${import.meta.env.VITE_APP_URL}/${value.cover}`}
+              src={`/assets/${value.cover}`}
               alt="
             top cart pic
             "

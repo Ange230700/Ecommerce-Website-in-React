@@ -12,7 +12,9 @@ function Annocument() {
       <div className="container d_flex">
         <div className="img" style={mystyle}>
           <img
-            src={`${import.meta.env.VITE_APP_URL}/images/banner-1.png`}
+            // src={`${import.meta.env.VITE_API_URL}/images/banner-1.png`}
+            // src="/client/src/assets/images/banner-1.png"
+            src="/assets/images/banner-1.png"
             alt="banner pic"
             width="100%"
             height="100%"
@@ -20,7 +22,9 @@ function Annocument() {
         </div>
         <div className="img" style={mystyle1}>
           <img
-            src={`${import.meta.env.VITE_APP_URL}/images/banner-2.png`}
+            // src={`${import.meta.env.VITE_API_URL}/images/banner-2.png`}
+            // src="/client/src/assets/images/banner-2.png"
+            src="/assets/images/banner-2.png"
             alt="banner pic"
             width="100%"
             height="100%"

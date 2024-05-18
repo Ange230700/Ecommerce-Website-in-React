@@ -8,8 +8,9 @@ function FlashDeals() {
     <section className="flash">
       <div className="container">
         <div className="heading f_flex">
-          <i className="fa fa-bolt" />
-          <h1>Flash Delas</h1>
+          {/* <i className="fa fa-bolt" /> */}
+          <img src="/assets/icons/thunder.svg" alt="bolt icon" />
+          <h1>Flash Deals</h1>
         </div>
         <FlashCard productItems={productItems} addToCart={addToCart} />
       </div>

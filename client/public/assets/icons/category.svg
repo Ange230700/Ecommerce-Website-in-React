@@ -1,0 +1,27 @@
+<svg clip-rule="evenodd" fill-rule="evenodd" height="15" stroke-linejoin="round" stroke-miterlimit="2"
+    viewBox="0 0 48 48" width="15" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(-504 -360)">
+        <g id="SOLID" transform="scale(1.0005)">
+            <g>
+                <circle cx="510.5" cy="395.992" r="4.5" />
+            </g>
+            <g>
+                <path
+                    d="m550 395.984c0-2.209-1.791-4-4-4h-25c-2.209 0-4 1.791-4 4 0 2.21 1.791 4 4 4h25c2.209 0 4-1.79 4-4z" />
+            </g>
+            <g>
+                <circle cx="510.5" cy="384" r="4.5" />
+            </g>
+            <g>
+                <path
+                    d="m550 383.992c0-2.209-1.791-4-4-4h-25c-2.209 0-4 1.791-4 4s1.791 4 4 4h25c2.209 0 4-1.791 4-4z" />
+            </g>
+            <g>
+                <circle cx="510.5" cy="372.008" r="4.5" />
+            </g>
+            <g>
+                <path d="m550 372c0-2.209-1.791-4-4-4h-25c-2.209 0-4 1.791-4 4s1.791 4 4 4h25c2.209 0 4-1.791 4-4z" />
+            </g>
+        </g>
+    </g>
+</svg>

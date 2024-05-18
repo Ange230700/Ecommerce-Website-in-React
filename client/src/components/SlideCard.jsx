@@ -1,3 +1,15 @@
+/* 
+  eslint-disable react/no-unstable-nested-components
+*/
+/*
+  eslint-disable no-unused-vars
+*/
+/*
+  eslint-disable react/self-closing-comp
+*/
+/*
+  eslint-disable react/jsx-props-no-spreading
+*/
 import Slider from "react-slick";
 import SlideItem from "./SlideItem";
 import Sdata from "../services/Sdata";
@@ -11,15 +23,33 @@ function SlideCard() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    appendDots: (dots) => <ul style={{ margin: "0px" }}>{dots}</ul>, // eslint-disable-line
+    appendDots: (dots) => (
+      <ul
+        style={{
+          margin: "0px",
+          padding: "10px",
+          position: "absolute",
+          bottom: "10px",
+          width: "100%",
+        }}
+      >
+        {dots}
+      </ul>
+    ),
+    customPaging: (i) => (
+      <div
+        style={{
+          width: "10px",
+          height: "10px",
+          borderRadius: "50%",
+          background: "grey",
+        }}
+      ></div>
+    ),
   };
 
   return (
-    <Slider
-      appendDots={settings.appendDots}
-      arrows={settings.arrows}
-      autoplay={settings.autoplay}
-    >
+    <Slider {...settings}>
       {Sdata.map((value) => (
         <SlideItem
           key={value.id}

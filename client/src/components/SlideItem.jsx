@@ -11,7 +11,7 @@ function SlideItem({ title, desc, cover }) {
         </button>
       </div>
       <div className="right">
-        <img src={`${import.meta.env.VITE_APP_URL}/${cover}`} alt={title} />
+        <img src={`/assets/${cover}`} alt={title} />
       </div>
     </div>
   );

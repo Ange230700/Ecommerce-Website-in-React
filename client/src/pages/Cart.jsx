@@ -27,10 +27,7 @@ function Cart() {
             return (
               <div className="cart-list product d_flex" key={item.id}>
                 <div className="img">
-                  <img
-                    src={`${import.meta.env.VITE_APP_URL}/${item.cover}`}
-                    alt=""
-                  />
+                  <img src={`/assets/${item.cover}`} alt="" />
                 </div>
                 <div className="cart-details">
                   <h3>{item.name}</h3>
