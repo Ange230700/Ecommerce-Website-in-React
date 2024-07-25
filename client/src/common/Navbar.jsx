@@ -7,7 +7,7 @@ function Navbar() {
 
   return (
     <header className="header">
-      <div className="container d_flex">
+      <div className="container d_flex end">
         <div className="catgrories d_flex">
           {/* <span className="fa-solid fa-border-all" /> */}
           <img src="/assets/icons/category.svg" alt="category" />
@@ -65,9 +65,19 @@ function Navbar() {
             onClick={() => setMobileMenu(!MobileMenu)}
           >
             {MobileMenu ? (
-              <i className="fas fa-times close home-btn" />
+              // <i className="fas fa-times close home-btn" />
+              <img
+                className="close home-btn"
+                src="/assets/icons/close.svg"
+                alt="close icon"
+              />
             ) : (
-              <i className="fas fa-bars open" />
+              // <i className="fas fa-bars open" />
+              <img
+                className="open"
+                src="/assets/icons/menu-bar.svg"
+                alt="menu icon"
+              />
             )}
           </button>
         </div>

@@ -3,7 +3,8 @@ import data from "../services/Wdata";
 function Wrapper() {
   return (
     <section className="wrapper background">
-      <div className="container grid2">
+      {/* <div className="container grid2"> */}
+      <div className="container wrap">
         {data.map((val) => (
           <div className="product" key={val.id}>
             <div className="img icon-circle">

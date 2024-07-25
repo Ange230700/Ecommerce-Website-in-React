@@ -17,7 +17,7 @@ function Cart() {
 
         <div className="cart-details">
           {CartItem.length === 0 && (
-            <h1 className="no-items product">No Items are add in Cart</h1>
+            <h1 className="no-items product">No Items are added in Cart</h1>
           )}
 
           {/* yasma hami le cart item lai display garaaxa */}
@@ -56,7 +56,8 @@ function Cart() {
                       onClick={() => addToCart(item)}
                       aria-label="Increment"
                     >
-                      <i className="fa-solid fa-plus" />
+                      {/* <i className="fa-solid fa-plus" /> */}
+                      <img src="/assets/icons/add.svg" alt="plus" />
                     </button>
                     <button
                       type="button"
@@ -64,7 +65,8 @@ function Cart() {
                       onClick={() => decreaseQty(item)}
                       aria-label="Decrement"
                     >
-                      <i className="fa-solid fa-minus" />
+                      {/* <i className="fa-solid fa-minus" /> */}
+                      <img src="/assets/icons/minimize-sign.svg" alt="minus" />
                     </button>
                   </div>
                 </div>

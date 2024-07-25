@@ -13,7 +13,7 @@ function Search() {
   return (
     <section className="search">
       <div className="container c_flex">
-        <div className="logo width ">
+        <div className="logo width">
           <img
             // src={`${import.meta.env.VITE_API_URL}/`}
             src="/assets/icons/logo.svg"

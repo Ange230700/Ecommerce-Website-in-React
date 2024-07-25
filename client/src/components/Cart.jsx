@@ -2,7 +2,8 @@ import Ndata from "../services/Ndata";
 
 function Cart() {
   return (
-    <div className="content grid product">
+    // <div className="content grid product">
+    <div className="content wrap product">
       {Ndata.map((val) => (
         <div className="box" key={val.id}>
           <div className="img">

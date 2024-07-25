@@ -14,7 +14,12 @@ function Discount() {
           </div>
           <div className="heading-right row ">
             <span>View all</span>
-            <i className="fa-solid fa-caret-right" />
+            {/* <i className="fa-solid fa-caret-right" /> */}
+            <img
+              className="view-all-icon"
+              src="/assets/icons/caret.svg"
+              alt="view all"
+            />
           </div>
         </div>
         <Dcard />

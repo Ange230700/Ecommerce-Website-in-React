@@ -18,14 +18,22 @@
   border-radius: 50px;
   margin: 5px;
   position: absolute;
-  top: 10px;
+  // top: 10px;
+  top: 0;
 }
 .TopCate .nametop .tleft {
   left: 0;
+  z-index: 10000;
 }
 .TopCate .nametop .tright {
   background-color: aliceblue;
   color: black;
   position: absolute;
   right: 0;
+  z-index: 10000;
+}
+
+.heading .view-all-icon {
+  width: fit-content;
+  height: fit-content;
 }

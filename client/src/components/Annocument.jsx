@@ -2,10 +2,12 @@ function Annocument() {
   const mystyle = {
     width: "30%",
     height: "340px",
+    objectFit: "cover",
   };
   const mystyle1 = {
     width: "68%",
     height: "340px",
+    objectFit: "cover",
   };
   return (
     <section className="annocument background">

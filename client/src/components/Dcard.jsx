@@ -1,22 +1,26 @@
+/*
+  eslint-disable react/jsx-props-no-spreading
+*/
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Ddata from "../services/Ddata";
+import SampleNextArrow from "./SampleNextArrow";
+import SamplePrevArrow from "./SamplePrevArrow";
 
 function Dcard() {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 6,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
   return (
-    <Slider
-      appendDots={settings.appendDots}
-      arrows={settings.arrows}
-      autoplay={settings.autoplay}
-    >
+    <Slider {...settings}>
       {Ddata.map((value) => (
         <div className="box product" key={value.id}>
           <div className="img">

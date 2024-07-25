@@ -11,11 +11,13 @@ function Footer() {
           </p>
           <div className="icon d_flex">
             <div className="img d_flex">
-              <i className="fa-brands fa-google-play" />
+              {/* <i className="fa-brands fa-google-play" /> */}
+              <img src="/assets/icons/google-play.svg" alt="google play icon" />
               <span>Google Play</span>
             </div>
             <div className="img d_flex">
-              <i className="fa-brands fa-app-store-ios" />
+              {/* <i className="fa-brands fa-app-store-ios" /> */}
+              <img src="/assets/icons/app-store.svg" alt="app store icon" />
               <span>App Store</span>
             </div>
           </div>
